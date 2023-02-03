@@ -31,48 +31,50 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 /* Customization from here */
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-.BrandHolder{
+.BrandHolder {
   padding: 50px 40px;
-  min-width: 300px;
+  /* min-width: 100px;
   width: 700px;
-  max-width: 700px;
+  */
+  width: 700px;
   margin: 40px 0px;
   border-radius: 10px;
   border: 1px solid rgb(228, 228, 228);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.BrandHolder .BrandHeader{
+.BrandHolder .BrandHeader {
   border-bottom: 4px solid green;
   padding: 10px 0px;
   margin-bottom: 20px;
 }
 
-.BrandHolder .BrandHeader .BrandName{
+.BrandHolder .BrandHeader .BrandName {
   text-align: left;
   text-transform: capitalize;
   font-weight: 600;
 }
 
-.Card{
+.Card {
   display: flex;
   flex-direction: row;
   padding: 10px;
@@ -83,18 +85,18 @@ body{
 }
 
 
-.Card div:first-child{
+.Card div:first-child {
   flex-grow: 1;
 }
 
-.CardBody{
+.CardBody {
   flex-grow: 3;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.CardBody .ModelName{
+.CardBody .ModelName {
   text-transform: capitalize;
   color: green;
   padding-bottom: 5px;
@@ -102,7 +104,6 @@ body{
   margin-bottom: 5px;
 }
 
-.CardImage{
+.CardImage {
   width: 200px;
 }
-
