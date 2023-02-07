@@ -1,0 +1,6 @@
+Create a todo app
+
+
+Description (Want to make this)
+- There should be a input text field (name and description), and a datetime field for due date (for now make it required) and a btn on right named "Add"
+- When the person click on the "Add" btn, a todo task will be created. Which will consists of task name, complete btn, edit btn, and a delete btn
