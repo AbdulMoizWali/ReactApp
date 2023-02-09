@@ -1,0 +1,4 @@
+To Load the modules folder
+
+This code will intsall the modules and dependencies
+npm i

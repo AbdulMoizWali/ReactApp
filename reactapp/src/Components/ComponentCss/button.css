@@ -1,0 +1,13 @@
+.primary-button {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.danger-button {
+    background-color: red;
+    color: aliceblue;
+    padding: 10px;
+    margin-right: 10px;
+}

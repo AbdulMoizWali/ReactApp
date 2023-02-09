@@ -2,9 +2,8 @@ import { useState } from 'react';
 import '../../Assignment/Assignment2/Assignment2.css'
 
 
-export function Assignment2() {
+export function Assignment2Sir() {
     const [todolist, setTodolist] = useState(["Complete Assignment 2", "Complete the project."]);
-    const [todolistEnabled, setTodolistEnabled] = useState([true, true]);
     const [Text, setText] = useState("");
 
     let AddTodoTask = () => {
@@ -12,36 +11,26 @@ export function Assignment2() {
             return;
         }
         todolist.push(Text);
-        todolistEnabled.push(true);
 
         setTodolist([...todolist]);
         setText("");
     };
 
-    let EditTodoBtnPressed = (index) => {
-        todolistEnabled[index] = !todolistEnabled[index];
-        setTodolistEnabled([...todolistEnabled]);
-    }
-
-    let EditTodoTask = (index, Value) => {
-        todolist.splice(index, 1, Value);
-        console.log(index + " :index edited");
+    let EditTodoTask = (index) => {
+        let a = prompt("Enter value ", todolist[index]);
+        todolist[index] = a;
         setTodolist([...todolist]);
     }
 
     let DeleteTodoTask = (index) => {
         todolist.splice(index, 1);
-        todolistEnabled.splice(index, 1);
-        console.log(index + " :index deleted");
         setTodolist([...todolist]);
-        setTodolistEnabled([...todolistEnabled]);
     }
 
     let DeleteAllTask = () => {
         if (window.confirm('Are you sure you want to delete all tasks?')) {
             console.log(true);
             setTodolist([...[]]);
-            setTodolistEnabled([...[]]);
         }
     }
 
@@ -62,10 +51,8 @@ export function Assignment2() {
                         return (
                             <div key={i} className="todoList">
                                 <span className='listNo'>{i + 1}</span>
-                                <input className='todoListText' type="text" value={x} disabled={todolistEnabled[i]} onChange={(e) => {
-                                    EditTodoTask(i, e.target.value);
-                                }} onBlur={() => EditTodoBtnPressed(i)} />
-                                <input className='todoEdit' type="button" value="🖋️" onClick={() => EditTodoBtnPressed(i)} />
+                                <input className='todoListText' type="text" value={x} disabled />
+                                <input className='todoEdit' type="button" value="🖋️" onClick={() => EditTodoTask(i)} />
                                 <input className='todoDelete' type="button" value="🗑️" onClick={() => DeleteTodoTask(i)} />
                             </div>
                         )
