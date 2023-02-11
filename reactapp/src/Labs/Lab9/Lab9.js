@@ -8,8 +8,6 @@ import Input from "../../Components/input";
 import '../../Components/ComponentCss/button.css'
 
 export function Lab9() {
-
-
     return (
         <div>
             <Button label='By default' />
