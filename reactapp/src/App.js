@@ -6,19 +6,22 @@ import { Assignment2 } from './Assignment/Assignment2/Assignment2.js';
 import { Assignment2Sir } from './Assignment/Assignment2/Assignment2BySir';
 import { Lab9 } from './Labs/Lab9/Lab9';
 import { Lab10 } from './Labs/Lab10/Lab10';
+import { Lab11 } from './Labs/Lab11/Lab11';
+import { ReactLab11 } from './Labs/Lab11/ReactBootstrap/ReactLab11';
+import { MaterialUILab11 } from './Labs/Lab11/MaterialUIBase/MaterialUILab11';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {
-          Lab10()
-        }
-      </header>
-    </div>
+    // <div className="App">
+    //   <header className="App-header">
+    //   </header>
+    // </div>
+    MaterialUILab11()
   );
 }
 
