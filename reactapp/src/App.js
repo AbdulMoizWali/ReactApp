@@ -11,17 +11,29 @@ import { ReactLab11 } from './Labs/Lab11/ReactBootstrap/ReactLab11';
 import { MaterialUILab11 } from './Labs/Lab11/MaterialUIBase/MaterialUILab11';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BasicTable from './Labs/Lab12/Component/BasicTable';
+import './Labs/Lab12/Component/ShowDataInTable';
+import ShowDataInTable from './Labs/Lab12/Component/ShowDataInTable';
 
 
 
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //   </header>
-    // </div>
-    MaterialUILab11()
+    <div className="App">
+      <header className="App-header">
+        <ShowDataInTable data={[
+          {
+            id: 1,
+            title: 'aaa'
+          },
+          {
+            id: 2,
+            title: 'aaa'
+          }
+        ]} onRowClick={(e) => console.log(e)} />
+      </header>
+    </div>
   );
 }
 
