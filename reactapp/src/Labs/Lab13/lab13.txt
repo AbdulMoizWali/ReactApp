@@ -1,0 +1,29 @@
+api is simply a connection 
+
+api k through db k data mangwaten hain
+sara kaam api k through karte hain
+
+
+GET (fetch data)
+POST (insert data)
+PUT  (update/edit karna)
+DELETE (delete data)
+
+
+it is simply a url 
+
+
+
+
+
+
+for that runn
+
+
+npm i axios
+
+
+
+
+npm i react-router-dom
+//To make different pages like home services
