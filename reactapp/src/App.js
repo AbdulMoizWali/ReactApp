@@ -14,26 +14,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BasicTable from './Labs/Lab12/Component/BasicTable';
 import './Labs/Lab12/Component/ShowDataInTable';
 import ShowDataInTable from './Labs/Lab12/Component/ShowDataInTable';
+import Assignment5Router from './Assignment/Assignment5/Config/Assignment5Router';
 
 
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ShowDataInTable data={[
-          {
-            id: 1,
-            title: 'aaa'
-          },
-          {
-            id: 2,
-            title: 'aaa'
-          }
-        ]} onRowClick={(e) => console.log(e)} />
-      </header>
-    </div>
+        <Assignment5Router />
+    // <div className="App">
+    //   <header className="App-header">
+    //   </header>
+    // </div>
   );
 }
 
