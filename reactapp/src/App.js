@@ -15,17 +15,17 @@ import BasicTable from './Labs/Lab12/Component/BasicTable';
 import './Labs/Lab12/Component/ShowDataInTable';
 import ShowDataInTable from './Labs/Lab12/Component/ShowDataInTable';
 import Assignment5Router from './Assignment/Assignment5/Config/Assignment5Router';
+import Lab14 from './Labs/Lab14/Lab14';
+import Lab14DynamicRouter from './Labs/Lab14/DynamicRoutes/Lab14DynamicRouter';
 
 
 
 
 function App() {
   return (
-        <Assignment5Router />
-    // <div className="App">
-    //   <header className="App-header">
-    //   </header>
-    // </div>
+
+    Lab14DynamicRouter()
+
   );
 }
 

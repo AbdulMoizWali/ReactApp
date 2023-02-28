@@ -1,9 +1,10 @@
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function Screen4() {
     //let api = "https://jsonplaceholder.typicode.com/todos"; //todo is end point
-    useEffect(()=>{
+    useEffect(() => {
         getAPIData();
     }, []);
     let api = "https://jsonplaceholder.typicode.com/photos";
