@@ -1,4 +1,4 @@
-export let _mobiles = [
+ export let _mobiles = [
     {
       name: "a30",
       ram: "4gb",
