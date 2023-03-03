@@ -17,6 +17,7 @@ import ShowDataInTable from './Labs/Lab12/Component/ShowDataInTable';
 import Assignment5Router from './Assignment/Assignment5/Config/Assignment5Router';
 import Lab14 from './Labs/Lab14/Lab14';
 import Lab14DynamicRouter from './Labs/Lab14/DynamicRoutes/Lab14DynamicRouter';
+import Lab15 from './Labs/Lab15/Lab15';
 
 
 
@@ -24,7 +25,7 @@ import Lab14DynamicRouter from './Labs/Lab14/DynamicRoutes/Lab14DynamicRouter';
 function App() {
   return (
 
-    Lab14DynamicRouter()
+    Lab15()
 
   );
 }
