@@ -18,6 +18,7 @@ import Assignment5Router from './Assignment/Assignment5/Config/Assignment5Router
 import Lab14 from './Labs/Lab14/Lab14';
 import Lab14DynamicRouter from './Labs/Lab14/DynamicRoutes/Lab14DynamicRouter';
 import Lab15 from './Labs/Lab15/Lab15';
+import MainlayoutLab16 from './Labs/Lab16/Config/MainlayoutLab16';
 
 
 
@@ -25,7 +26,7 @@ import Lab15 from './Labs/Lab15/Lab15';
 function App() {
   return (
 
-    Lab15()
+    MainlayoutLab16()
 
   );
 }

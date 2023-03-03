@@ -17,17 +17,15 @@ function SMGrid(props) {
                     </thead>
                     <tbody>
                         {
-                            datasource && Array.isArray(datasource) && datasource.length > 0 ? datasource.map((x, i) => {
-                                return <tr key={i}>
-                                    {
-                                        columns.map((e, ind) => {
-                                            return (
-                                                e.displayField ? <td key={ind}>{e.displayField('sfbsfb@gmail.com')}</td> : <td key={ind}>{x[e.key]}</td>
-                                            )
-                                        })
-                                    }
+                            datasource && Array.isArray(datasource) && datasource.length > 0 ? datasource.map((x, i) => (
+                                <tr key={i}>
+                                    {columns.map((e, ind) => (
+                                        <td key={ind}>
+                                            {e.displayField ? e.displayField(x) : x[e.key]}
+                                        </td>
+                                    ))}
                                 </tr>
-                            }) : null
+                            )) : null
                         }
                     </tbody>
                 </table>
