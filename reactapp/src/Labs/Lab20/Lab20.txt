@@ -1,0 +1,15 @@
+a.	Student Name
+b.	Father Name
+c.	Contact 
+d.	CNIC
+e.	Last qualification (dropdown)
+f.	Cource (dropdown)
+g.	Institute (disabled and filled)
+h.	Section (dropdown)
+i.	Email
+j.	Password
+k.	City (dropdown)
+l.	Country  (dropdown)
+m.	Date of birth
+n.	Gender (radio)
+o.	Address
