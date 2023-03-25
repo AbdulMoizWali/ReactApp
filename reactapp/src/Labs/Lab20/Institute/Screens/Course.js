@@ -11,18 +11,14 @@ export default function Course() {
         >
             <h2>Course Name</h2>
             <p>Duration</p>
-            <SMTextField label="Duration" id="outlined-start-adornment" sx={{ m: 1, width: '25ch' }} InputProps={{
+            <SMTextField 
+            value="10"
+            label="Duration" 
+            id="outlined-start-adornment" 
+            sx={{ m: 1, width: '25ch' }} 
+            InputProps={{
                 endAdornment: <InputAdornment position="start">Hrs</InputAdornment>,
             }} />
-            <TextField
-                label="Duration"
-                id="outlined-start-adornment"
-                sx={{ m: 1, width: '25ch' }}
-                InputProps={{
-                    endAdornment: <InputAdornment position="start">Hrs</InputAdornment>,
-                }}
-                value="10"
-            />
         </Card>
     </>
 }

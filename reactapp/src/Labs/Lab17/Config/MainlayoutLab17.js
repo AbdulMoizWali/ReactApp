@@ -9,6 +9,7 @@ export default function MainlayoutLab17() {
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="Dashboard/*" element={<ResponsiveDrawer />} />
             </Routes>
         </BrowserRouter>

@@ -2,14 +2,27 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-export default function SMTextField({id, label, variant, onChange, InputProps}) {
+export default function SMTextField({id, label, value, variant, onChange, InputProps, sx, name, type, required, fullWidth, margin}) {
   return (
       <TextField 
       id={id?id:"outlined-basic"} 
       label={label?label:"Input Field"} 
-      variant={variant?variant:"outlined"} 
+      name={name}
+      type={type}
+      value={value}
+      {
+        ...variant?variant=variant:""
+      }   
+      required={required}
+      fullWidth={fullWidth}
+      margin={margin}
       InputProps={InputProps?InputProps:null}
-      onChange={(e)=> onChange(e)}
+      
+      onChange={onChange?(e)=> {
+        onChange(e)
+      }:null
+      }
+      sx={sx}
       />
       //<TextField id="outlined-basic" label="Outlined" variant="outlined" InputProps={InputProps}/>
     //   <TextField id="filled-basic" label="Filled" variant="filled" />

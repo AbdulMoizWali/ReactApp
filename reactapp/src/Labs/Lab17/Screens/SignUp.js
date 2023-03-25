@@ -9,13 +9,15 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { userSignUp } from "../Firebase/FirebaseMethods";
 import { useState } from "react";
+import SMTextField from "../../../Components/SMTextField";
+import SMButton from "../../../Components/SMButton";
 
 export default function SignUp() {
     const [userData, setUserData] = useState({});
 
 
     const handleSubmit = () => {
-        userSignUp("dsav", "sadv");
+        userSignUp("abc@gmail.com", "12345678");
     }
     return (
         <>
@@ -32,7 +34,7 @@ export default function SignUp() {
                         Sign Up
                     </Typography>
                     <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-                        <TextField
+                        <SMTextField
                             margin="normal"
                             required
                             fullWidth
@@ -42,7 +44,7 @@ export default function SignUp() {
                             autoComplete="email"
                             autoFocus
                         />
-                        <TextField
+                        <SMTextField
                             margin="normal"
                             required
                             fullWidth
@@ -51,14 +53,21 @@ export default function SignUp() {
                             type="password"
                             id="password"
                         />
-                        <Button
+                        <SMButton
+                            label="Sign up"
                             type="submit"
                             fullWidth
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                        >
-                            Sign Up
-                        </Button>
+                        />
+                        {/* <SMButton
+                            label="Already have an account? Login"
+                            variant="text"
+                            sx={{ mt: 3, mb: 2 }}
+                            onClick={()=>{
+                                <Link to="#" variant="body2"></Link>
+                            }}
+                        /> */}
                         <Grid container>
                             <Grid item>
                                 <Link to="#" variant="body2">
