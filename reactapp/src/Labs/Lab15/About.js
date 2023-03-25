@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Get } from "./apibasemethod";
-import SMGrid from "./SMGrid";
+import SMTable from "../../Components/SMTable";
 
 export default function About() {
     const [userList, setUserList] = useState([]);
@@ -52,7 +52,7 @@ export default function About() {
             <h1>
                 About
             </h1>
-            <SMGrid isLoading={loader} title='User Data' columns={Cols} datasource={userList} />
+            <SMTable isLoading={loader} title='User Data' columns={Cols} datasource={userList} />
         </>
     )
 }

@@ -1,9 +1,8 @@
-import { Box, Grid, TextField, Typography } from '@mui/material'
-import { height, padding } from '@mui/system'
-import SMBox from '../../Components/SMBox'
-import SMDropdown from '../../Components/SMDropdown'
-import SMRadio from '../../Components/SMRadio'
-import SMTextField from '../../Components/SMTextField'
+import { Box, Grid, TextField, Typography } from '@mui/material';
+import { height, padding } from '@mui/system';
+import SMDropdown from '../../Components/SMDropdown';
+import SMRadio from '../../Components/SMRadio';
+import SMTextField from '../../Components/SMTextField';
 
 export default function Lab20() {
     return (

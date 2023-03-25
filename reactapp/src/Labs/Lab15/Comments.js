@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Get } from "./apibasemethod";
-import SMGrid from "./SMGrid";
+import SMTable from "../../Components/SMTable";
 
 export default function Comments() {
     const [commentsData, setCommentsData] = useState(false);
@@ -34,7 +34,7 @@ export default function Comments() {
         }
     ];
 
-    return <SMGrid title="Comments data" columns={columns} datasource={commentsData} isLoading={loader} />
+    return <SMTable title="Comments data" columns={columns} datasource={commentsData} isLoading={loader} />
 
     //let get
 }

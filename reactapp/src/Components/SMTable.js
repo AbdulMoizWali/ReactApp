@@ -1,4 +1,4 @@
-function SMGrid(props) {
+function SMTable(props) {
     const { title, columns, datasource, onRowClick, isLoading } = props;
 
     return <div>
@@ -33,4 +33,4 @@ function SMGrid(props) {
     </div>
 }
 
-export default SMGrid;
+export default SMTable;

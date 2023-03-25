@@ -21,6 +21,8 @@ import Lab15 from './Labs/Lab15/Lab15';
 import MainlayoutLab16 from './Labs/Lab16/Config/MainlayoutLab16';
 import Assignment6 from './Assignment/Assignment6/Config/Assignment6';
 import MainlayoutLab17 from './Labs/Lab17/Config/MainlayoutLab17';
+import Lab20 from './Labs/Lab20/Lab20';
+import Mainlayout from './Labs/Lab20/Institute/Config/Mainlayout';
 
 
 
